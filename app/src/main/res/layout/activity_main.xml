@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#010913"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/txtUser"
@@ -63,6 +63,7 @@
         android:background="@android:color/darker_gray"
         android:backgroundTint="@android:color/darker_gray"
         android:text="Entrar"
+        android:onClick="menu"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

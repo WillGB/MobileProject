@@ -18,4 +18,9 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.cadastrar_user);
     }
+
+    public void menu (View v){
+
+        setContentView(R.layout.menu);
+    }
 }
