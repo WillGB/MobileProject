@@ -11,23 +11,32 @@ import android.widget.Toast;
 public class CadastrarUser extends AppCompatActivity {
 
     TextView viewID;
-    EditText txtLogin, txtSenha;
+    EditText txtLogin;
+    EditText txtSenha;
     Button btnCadastrar;
 
     BancoDados bd = new BancoDados(this);
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.cadastrar_user);
 
         viewID = (TextView) findViewById(R.id.txt_mostra_ID);
         txtLogin = (EditText) findViewById(R.id.txt_cadastra_login);
         txtSenha = (EditText) findViewById(R.id.txtSenha);
         btnCadastrar = (Button) findViewById(R.id.btn_Confirma_Cadastro);
     }
-/*
-    public void cadastraClick(View v){
+
+    @Override
+    protected void onStop()
+    {
+        super.onStop();
+        finish();
+    }
+
+    public void cadastraClick(View v) {
         bd.addCliente(new Cliente(txtLogin.getText().toString(), txtSenha.getText().toString()));
-        Toast.makeText(CadastrarUser.this, "Salvo com sucesso", Toast.LENGTH_LONG).show();
+        Toast.makeText(getBaseContext(), "Salvo com sucesso", Toast.LENGTH_LONG).show();
         setContentView(R.layout.activity_main);
-    }*/
+    }
 }

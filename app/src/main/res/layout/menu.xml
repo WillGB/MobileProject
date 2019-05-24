@@ -35,7 +35,6 @@
         android:layout_marginTop="92dp"
         android:layout_marginBottom="10dp"
         android:background="@android:color/background_light"
-        android:onClick="pcs_prontos"
         android:text="PC's Prontos"
         android:textAlignment="center"
         android:textSize="24sp"
@@ -52,9 +51,10 @@
         android:layout_width="0dp"
         android:layout_height="110dp"
         android:layout_marginTop="308dp"
-        android:text="Button"
+        android:text="Visualizar"
+        android:onClick="pcs_prontos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 </android.support.constraint.ConstraintLayout>

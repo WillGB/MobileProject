@@ -2,9 +2,9 @@ package com.example.mobileproject;
 
 public class Cliente {
 
-    String login;
-    String senha;
-    int id;
+    private int id;
+    private String login;
+    private String senha;
 
     public Cliente(){
 

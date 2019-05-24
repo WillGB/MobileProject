@@ -18,9 +18,7 @@
         android:background="@android:color/background_light"
         android:ems="10"
         android:hint="Digite seu usuário"
-        android:inputType="textVisiblePassword"
-        android:password="false"
-        android:phoneNumber="false"
+        android:inputType="text"
         android:selectAllOnFocus="false"
         android:singleLine="true"
         android:textAlignment="center"
@@ -33,7 +31,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
-    <Button xmlns:tools="http://schemas.android.com/tools"
+    <Button
         android:id="@+id/btnNew"
         android:layout_width="395dp"
         android:layout_height="47dp"
@@ -62,8 +60,8 @@
         android:layout_marginBottom="120dp"
         android:background="@android:color/darker_gray"
         android:backgroundTint="@android:color/darker_gray"
+        android:onClick="login"
         android:text="Entrar"
-        android:onClick="menu"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -85,7 +83,6 @@
         android:ems="10"
         android:hint="Digite sua senha"
         android:inputType="textPassword"
-        android:password="true"
         android:selectAllOnFocus="true"
         android:singleLine="true"
         android:textAlignment="center"

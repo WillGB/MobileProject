@@ -10,10 +10,12 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView txtUsuario, txtSenha;
-    Button btnLogin, btnCadastra;
+    TextView txtUsuario;
+    TextView txtSenha;
+    Button btnLogin;
+    Button btnCadastra;
 
-    BancoDados bd = new BancoDados(this);
+    public final BancoDados bd = new BancoDados(getBaseContext());
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,31 +26,29 @@ public class MainActivity extends AppCompatActivity {
         txtSenha = (TextView) findViewById(R.id.txtSenha);
         btnLogin = (Button) findViewById(R.id.btnEntrar);
         btnCadastra = (Button) findViewById(R.id.btnNew);
-
-
-        btnLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Cliente main = new Cliente(txtUsuario.getText().toString(), txtSenha.getText().toString());
-                Cliente base = bd.selecionarCliente(main.getLogin());
-                if (main.getLogin().equals(base.getLogin()) && main.getSenha().equals(base.getSenha())){
-                    Toast.makeText(MainActivity.this, "sucexo", Toast.LENGTH_LONG).show();
-                    setContentView(R.layout.menu);
-
-                } else {
-                    Toast.makeText(MainActivity.this, "nononononono", Toast.LENGTH_LONG).show();
-                }
-            }
-        });
     }
 
     public void cadastrar_user(View v){
 
-        setContentView(R.layout.cadastrar_user);
+        final Intent cadastraUserIntent = new  Intent(getBaseContext(), CadastrarUser.class);
+        startActivity(cadastraUserIntent);
     }
 
-    public void menu (View v){
+    public void login(View v)
+    {
+        //Cliente main = new Cliente(txtUsuario.getText().toString(), txtSenha.getText().toString());
+        //Cliente base = bd.selecionarCliente(main.getLogin());
+        //if(base != null)
+        //{
+            //if (main.getLogin().equalsIgnoreCase(base.getLogin()) && main.getSenha().equalsIgnoreCase(base.getSenha())){
+                //Toast.makeText(this, "sucexo", Toast.LENGTH_LONG).show();
 
-        setContentView(R.layout.menu);
+                final Intent menuIntent = new Intent(getBaseContext(), Menu.class);
+                startActivity(menuIntent);
+           // }
+        //}
+        //else {
+            //Toast.makeText(this, "nononononono", Toast.LENGTH_LONG).show();
+        //}
     }
 }
