@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout2"
+    android:background="#010913"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Menu">
@@ -16,7 +17,6 @@
         android:background="@android:color/background_dark"
         android:gravity="center"
         android:lineSpacingExtra="8sp"
-        android:text="LOGOOOOO"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textAppearance="@style/TextAppearance.AppCompat"
@@ -51,10 +51,14 @@
         android:layout_width="0dp"
         android:layout_height="110dp"
         android:layout_marginTop="308dp"
-        android:text="Visualizar"
+        android:background="@android:color/background_light"
         android:onClick="pcs_prontos"
+        android:text="MONTE SEU PC"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="MONTAR PC" />
 </android.support.constraint.ConstraintLayout>

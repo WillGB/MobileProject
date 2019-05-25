@@ -49,7 +49,6 @@
         android:background="@android:color/background_dark"
         android:gravity="center"
         android:lineSpacingExtra="8sp"
-        android:text="LOGOOOOO"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textAppearance="@style/TextAppearance.AppCompat"
