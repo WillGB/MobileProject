@@ -6,16 +6,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 public class PcsActivity extends AppCompatActivity {
 
     private Button btnComprar;
-    private Button btnMouse;
-    private Button btnTeclado;
-    private Button btnCpu;
+    private ImageButton btnMouse;
+    private ImageButton btnTeclado;
+    private ImageButton btnCpu;
     private TextView textQtde;
     private TextView textTotal;
 
@@ -26,12 +25,12 @@ public class PcsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.pcs_prontos);
+        setContentView(R.layout.monta_pcs);
 
         btnComprar = (Button) findViewById(R.id.btnComprar);
-        btnMouse = (Button) findViewById(R.id.btnMouse);
-        btnTeclado = (Button) findViewById(R.id.btnTeclado);
-        btnCpu = (Button) findViewById(R.id.btnCpu);
+        btnMouse = (ImageButton) findViewById(R.id.btnMouse);
+        btnTeclado = (ImageButton) findViewById(R.id.btnTeclado);
+        btnCpu = (ImageButton) findViewById(R.id.btnCpu);
 
         textQtde = (TextView) findViewById(R.id.textQtde);
         textTotal = (TextView) findViewById(R.id.textTotal);

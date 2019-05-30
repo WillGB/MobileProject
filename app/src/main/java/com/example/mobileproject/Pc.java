@@ -5,15 +5,13 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 public class Pc extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.pcs);
+        setContentView(R.layout.pcs_prontos);
 
         ImageButton imageButton = (ImageButton)findViewById(R.id.pc5);
         imageButton.setOnClickListener(new View.OnClickListener() {
