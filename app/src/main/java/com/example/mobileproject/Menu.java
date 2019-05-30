@@ -18,6 +18,11 @@ public class Menu extends AppCompatActivity {
         setContentView(R.layout.pcs_prontos);
     }
 
+    public void pcs (View v){
+
+        setContentView(R.layout.pcs);
+    }
+
 
 
 

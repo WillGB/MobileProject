@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout2"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PcsActivity">
@@ -11,34 +12,43 @@
         android:id="@+id/btnMouse"
         android:layout_width="0dp"
         android:layout_height="110dp"
-        android:layout_marginTop="236dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="396dp"
         android:text="Mouse - R$30,00"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.225" />
 
     <Button
         android:id="@+id/btnTeclado"
         android:layout_width="0dp"
         android:layout_height="110dp"
-        android:layout_marginTop="376dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="280dp"
         android:text="Teclado - R$50,00"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.634" />
 
     <Button
         android:id="@+id/btnCpu"
         android:layout_width="0dp"
         android:layout_height="110dp"
-        android:layout_marginTop="520dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="120dp"
         android:text="CPU - R$500,00"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.652" />
 
     <TextView
         android:id="@+id/logo"
@@ -62,31 +72,40 @@
 
     <Button
         android:id="@+id/btnComprar"
-        android:layout_width="0dp"
+        android:layout_width="407dp"
         android:layout_height="110dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="8dp"
         android:text="Comprar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.755" />
 
     <TextView
         android:id="@+id/textTotal"
-        android:layout_width="wrap_content"
+        android:layout_width="228dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="Total: "
         android:textSize="27dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.988" />
 
     <TextView
         android:id="@+id/textQtde"
-        android:layout_width="wrap_content"
+        android:layout_width="226dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -94,10 +113,11 @@
         android:layout_marginBottom="8dp"
         android:text="Qtde: "
         android:textSize="27dp"
-        app:layout_constraintBottom_toTopOf="@+id/textTotal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCpu"
-        app:layout_constraintVertical_bias="0.14" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.891" />
 
 </android.support.constraint.ConstraintLayout>

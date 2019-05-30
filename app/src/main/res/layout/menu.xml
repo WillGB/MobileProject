@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout2"
-    android:background="#010913"
+    android:background="@drawable/fundo1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Menu">
@@ -36,6 +36,7 @@
         android:layout_marginBottom="10dp"
         android:background="@android:color/background_light"
         android:text="PC's Prontos"
+        android:onClick="pcs"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
