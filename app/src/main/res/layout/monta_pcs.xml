@@ -12,8 +12,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="197dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="71dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,23 +22,32 @@
 
 
             <ImageButton
+                android:id="@+id/btnTeclado"
+                android:layout_width="wrap_content"
+                android:layout_height="185dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="false"
+                android:visibility="visible"
+                app:srcCompat="@drawable/pc1"
+                tools:layout_editor_absoluteX="63dp"
+                tools:layout_editor_absoluteY="16dp"
+                tools:visibility="visible" />
+
+            <ImageButton
                 android:id="@+id/btnMouse"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Mouse - R$30,00"
-                app:srcCompat="@drawable/pc5"
+                app:srcCompat="@drawable/mouse"
                 tools:layout_editor_absoluteX="63dp"
                 tools:layout_editor_absoluteY="16dp" />
 
-
             <ImageButton
-                android:id="@+id/btnTeclado"
+                android:id="@+id/btnPlacaMae"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Teclado - R$50,00"
-                app:srcCompat="@drawable/pc5"
+                app:srcCompat="@drawable/monitor"
                 tools:layout_editor_absoluteX="63dp"
                 tools:layout_editor_absoluteY="16dp" />
 

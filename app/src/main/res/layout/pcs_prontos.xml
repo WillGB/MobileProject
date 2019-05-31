@@ -21,8 +21,8 @@
 
             <ImageButton
                 android:id="@+id/pc5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="236dp"
+                android:layout_height="323dp"
                 android:layout_gravity="center"
                 app:srcCompat="@drawable/pc5"
                 tools:layout_editor_absoluteX="63dp"
