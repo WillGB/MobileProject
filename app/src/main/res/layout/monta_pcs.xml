@@ -20,6 +20,79 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <ImageButton
+                android:id="@+id/btnPlacaMae"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/placamae"
+                tools:layout_editor_absoluteX="63dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <ImageButton
+                android:id="@+id/btnPlacaVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="false"
+                android:background="@android:color/transparent"
+                android:visibility="visible"
+                app:srcCompat="@drawable/placavideo"
+                tools:layout_editor_absoluteX="63dp"
+                tools:layout_editor_absoluteY="16dp"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/btnMemoria"
+                android:layout_width="wrap_content"
+                android:layout_height="136dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="false"
+                android:background="@android:color/transparent"
+                android:visibility="visible"
+                app:srcCompat="@drawable/memoriaram"
+                tools:layout_editor_absoluteX="63dp"
+                tools:layout_editor_absoluteY="16dp"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/btnHD"
+                android:layout_width="189dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/hd1tb"
+                tools:layout_editor_absoluteX="63dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <ImageButton
+                android:id="@+id/btnFonte"
+                android:layout_width="213dp"
+                android:layout_height="197dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/fontecorsair"
+                tools:layout_editor_absoluteX="63dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <ImageButton
+                android:id="@+id/btnCpu"
+                android:layout_width="205dp"
+                android:layout_height="246dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:text="CPU - R$500,00"
+                app:srcCompat="@drawable/gabinetebranco"
+                tools:layout_editor_absoluteX="63dp"
+                tools:layout_editor_absoluteY="16dp" />
+
 
             <ImageButton
                 android:id="@+id/btnTeclado"
@@ -47,16 +120,6 @@
                 tools:layout_editor_absoluteX="63dp"
                 tools:layout_editor_absoluteY="16dp" />
 
-            <ImageButton
-                android:id="@+id/btnPlacaMae"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center"
-                android:background="@android:color/transparent"
-                app:srcCompat="@drawable/placamae"
-                tools:layout_editor_absoluteX="63dp"
-                tools:layout_editor_absoluteY="16dp" />
 
             <ImageButton
                 android:id="@+id/btnMonitor"
@@ -69,23 +132,12 @@
                 tools:layout_editor_absoluteX="63dp"
                 tools:layout_editor_absoluteY="16dp" />
 
-            <ImageButton
-                android:id="@+id/btnCpu"
-                android:layout_width="205dp"
-                android:layout_height="246dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/transparent"
-                android:text="CPU - R$500,00"
-                app:srcCompat="@drawable/gabinetebranco"
-                tools:layout_editor_absoluteX="63dp"
-                tools:layout_editor_absoluteY="16dp" />
 
             <TextView
                 android:id="@+id/textQ"
                 android:layout_width="229dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="25dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
@@ -151,12 +203,12 @@
                 android:layout_marginTop="60dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
-                android:background="@android:color/transparent"
+                android:background="@drawable/fundobranco"
                 android:lineSpacingExtra="8sp"
                 android:onClick="onClickComprar"
                 android:text="Comprar"
                 android:textAlignment="center"
-                android:textColor="@android:color/background_light"
+                android:textColor="@android:color/background_dark"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="20dp"

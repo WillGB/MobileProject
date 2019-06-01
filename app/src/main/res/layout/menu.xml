@@ -14,19 +14,24 @@
         android:layout_height="57dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="3dp"
+        android:layout_marginBottom="8dp"
         android:background="@android:color/background_dark"
         android:gravity="center"
         android:lineSpacingExtra="8sp"
+        android:text="MENU"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@android:color/background_light"
         android:textSize="18sp"
         android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_pc_pronto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btn_pc_pronto"
@@ -34,25 +39,25 @@
         android:layout_height="112dp"
         android:layout_marginTop="92dp"
         android:layout_marginBottom="10dp"
-        android:background="@android:color/background_light"
-        android:text="PC's Prontos"
+        android:background="@drawable/fundobranco"
         android:onClick="pcs_prontos"
+        android:text="PC's Prontos"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.666" />
+        app:layout_constraintVertical_bias="0.818" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="0dp"
         android:layout_height="110dp"
-        android:layout_marginTop="308dp"
-        android:background="@android:color/background_light"
+        android:layout_marginTop="352dp"
+        android:background="@drawable/fundobranco"
         android:onClick="monta_pcs"
         android:text="MONTE SEU PC"
         android:textSize="24sp"
@@ -62,4 +67,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="MONTAR PC" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.001"
+        app:srcCompat="@drawable/iconlogo" />
 </android.support.constraint.ConstraintLayout>

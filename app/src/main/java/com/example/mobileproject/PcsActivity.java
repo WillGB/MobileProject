@@ -17,6 +17,10 @@ public class PcsActivity extends AppCompatActivity {
     private ImageButton btnCpu;
     private ImageButton btnMonitor;
     private ImageButton btnPlacaMae;
+    private ImageButton btnPlacaVideo;
+    private ImageButton btnHD;
+    private ImageButton btnFonte;
+    private ImageButton btnMemoria;
     private TextView textQtde;
     private TextView textTotal;
 
@@ -35,6 +39,10 @@ public class PcsActivity extends AppCompatActivity {
         btnCpu = (ImageButton) findViewById(R.id.btnCpu);
         btnMonitor = (ImageButton) findViewById(R.id.btnMonitor);
         btnPlacaMae = (ImageButton) findViewById(R.id.btnPlacaMae);
+        btnFonte = (ImageButton) findViewById(R.id.btnFonte);
+        btnPlacaVideo = (ImageButton) findViewById(R.id.btnPlacaVideo);
+        btnMemoria = (ImageButton) findViewById(R.id.btnMemoria);
+        btnHD = (ImageButton) findViewById(R.id.btnHD);
 
 
         textQtde = (TextView) findViewById(R.id.textQtde);
@@ -43,7 +51,7 @@ public class PcsActivity extends AppCompatActivity {
         btnComprar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "https://www.kabum.com.br";
+                String url = "https://www.chipart.com.br/monte-seu-computador";
                 Intent browser = new Intent(Intent.ACTION_VIEW);
                 browser.setData(Uri.parse(url));
                 startActivity(browser);
@@ -94,6 +102,43 @@ public class PcsActivity extends AppCompatActivity {
                 setTotais();
             }
         });
+
+        btnHD.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                qtde += 1;
+                total += 250.50;
+                setTotais();
+            }
+        });
+
+        btnPlacaVideo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                qtde += 1;
+                total += 2300.50;
+                setTotais();
+            }
+        });
+
+        btnFonte.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                qtde += 1;
+                total += 850.00;
+                setTotais();
+            }
+        });
+
+        btnMemoria.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                qtde += 1;
+                total += 150.00;
+                setTotais();
+            }
+        });
+
     }
 
     private void setTotais()
