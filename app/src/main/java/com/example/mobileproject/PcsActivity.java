@@ -15,6 +15,8 @@ public class PcsActivity extends AppCompatActivity {
     private ImageButton btnMouse;
     private ImageButton btnTeclado;
     private ImageButton btnCpu;
+    private ImageButton btnMonitor;
+    private ImageButton btnPlacaMae;
     private TextView textQtde;
     private TextView textTotal;
 
@@ -31,6 +33,9 @@ public class PcsActivity extends AppCompatActivity {
         btnMouse = (ImageButton) findViewById(R.id.btnMouse);
         btnTeclado = (ImageButton) findViewById(R.id.btnTeclado);
         btnCpu = (ImageButton) findViewById(R.id.btnCpu);
+        btnMonitor = (ImageButton) findViewById(R.id.btnMonitor);
+        btnPlacaMae = (ImageButton) findViewById(R.id.btnPlacaMae);
+
 
         textQtde = (TextView) findViewById(R.id.textQtde);
         textTotal = (TextView) findViewById(R.id.textTotal);
@@ -68,6 +73,24 @@ public class PcsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 qtde += 1;
                 total += 500.00;
+                setTotais();
+            }
+        });
+
+        btnMonitor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                qtde += 1;
+                total += 1500.00;
+                setTotais();
+            }
+        });
+
+        btnPlacaMae.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                qtde += 1;
+                total += 750.00;
                 setTotais();
             }
         });

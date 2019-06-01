@@ -6,7 +6,8 @@
     android:id="@+id/linearLayout3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fundo1">
+    android:background="@drawable/fundo1"
+    tools:context=".Pc">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -21,9 +22,11 @@
 
             <ImageButton
                 android:id="@+id/pc5"
-                android:layout_width="236dp"
-                android:layout_height="323dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:layout_gravity="center"
+                android:background="@android:color/transparent"
                 app:srcCompat="@drawable/pc5"
                 tools:layout_editor_absoluteX="63dp"
                 tools:layout_editor_absoluteY="16dp" />
@@ -32,7 +35,9 @@
                 android:id="@+id/pc6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:layout_gravity="center"
+                android:background="@android:color/transparent"
                 app:srcCompat="@drawable/pc6"
                 tools:layout_editor_absoluteX="63dp"
                 tools:layout_editor_absoluteY="16dp" />
@@ -41,7 +46,9 @@
                 android:id="@+id/pc2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:layout_gravity="center"
+                android:background="@android:color/transparent"
                 app:srcCompat="@drawable/pc2"
                 tools:layout_editor_absoluteX="63dp"
                 tools:layout_editor_absoluteY="16dp" />
@@ -51,7 +58,9 @@
                 android:id="@+id/pc9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:layout_gravity="center"
+                android:background="@android:color/transparent"
                 app:srcCompat="@drawable/pc9"
                 tools:layout_editor_absoluteX="63dp"
                 tools:layout_editor_absoluteY="16dp" />
@@ -60,7 +69,9 @@
                 android:id="@+id/pc8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:layout_gravity="center"
+                android:background="@android:color/transparent"
                 app:srcCompat="@drawable/pc8"
                 tools:layout_editor_absoluteX="63dp"
                 tools:layout_editor_absoluteY="16dp" />
@@ -69,7 +80,9 @@
                 android:id="@+id/pc7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:layout_gravity="center"
+                android:background="@android:color/transparent"
                 app:srcCompat="@drawable/pc7"
                 tools:layout_editor_absoluteX="63dp"
                 tools:layout_editor_absoluteY="16dp" />
@@ -78,7 +91,9 @@
                 android:id="@+id/pc3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:layout_gravity="center"
+                android:background="@android:color/transparent"
                 app:srcCompat="@drawable/pc3"
                 tools:layout_editor_absoluteX="63dp"
                 tools:layout_editor_absoluteY="16dp" />
@@ -87,7 +102,9 @@
                 android:id="@+id/pc4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:layout_gravity="center"
+                android:background="@android:color/transparent"
                 app:srcCompat="@drawable/pc4"
                 tools:layout_editor_absoluteX="63dp"
                 tools:layout_editor_absoluteY="16dp" />

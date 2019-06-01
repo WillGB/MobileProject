@@ -23,6 +23,7 @@
         <activity android:name=".CadastrarUser"></activity>
         <activity android:name=".Menu"></activity>
         <activity android:name=".PcsActivity"></activity>
+        <activity android:name=".Pc"></activity>
     </application>
 
 </manifest>

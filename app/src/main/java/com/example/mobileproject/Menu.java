@@ -1,5 +1,6 @@
 package com.example.mobileproject;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -15,12 +16,12 @@ public class Menu extends AppCompatActivity {
 
     public void monta_pcs (View v){
 
-        setContentView(R.layout.monta_pcs);
+        startActivity(new Intent(this, PcsActivity.class));
     }
 
     public void pcs_prontos (View v){
 
-        setContentView(R.layout.pcs_prontos);
+        startActivity(new Intent(this, Pc.class));
     }
 
 
