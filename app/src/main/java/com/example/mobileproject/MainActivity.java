@@ -15,13 +15,14 @@ public class MainActivity extends AppCompatActivity {
     Button btnLogin;
     Button btnCadastra;
 
-    public final BancoDados bd = new BancoDados(getBaseContext());
+    DBHelperCadastro db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        db = new DBHelperCadastro(this);
         txtUsuario = (TextView) findViewById(R.id.txtUser);
         txtSenha = (TextView) findViewById(R.id.txtSenha);
         btnLogin = (Button) findViewById(R.id.btnEntrar);
@@ -34,21 +35,31 @@ public class MainActivity extends AppCompatActivity {
         startActivity(cadastraUserIntent);
     }
 
-    public void login(View v)
-    {
-        //Cliente main = new Cliente(txtUsuario.getText().toString(), txtSenha.getText().toString());
-        //Cliente base = bd.selecionarCliente(main.getLogin());
-        //if(base != null)
-        //{
-            //if (main.getLogin().equalsIgnoreCase(base.getLogin()) && main.getSenha().equalsIgnoreCase(base.getSenha())){
-                //Toast.makeText(this, "sucexo", Toast.LENGTH_LONG).show();
+    public void entrarOnClick(View view){
 
-                final Intent menuIntent = new Intent(getBaseContext(), Menu.class);
-                startActivity(menuIntent);
-           // }
-        //}
-        //else {
-            //Toast.makeText(this, "nononononono", Toast.LENGTH_LONG).show();
-        //}
+        String username = txtUsuario.getText().toString();
+        String password = txtSenha.getText().toString();
+
+        if(username.equals("")) {
+            Toast.makeText(MainActivity.this, "Nome não inserido, tente novamente", Toast.LENGTH_SHORT).show();
+        }
+        else if(password.equals("")){
+            Toast.makeText(MainActivity.this, "Senha não inserida, tente novamente", Toast.LENGTH_SHORT).show();
+
+        }
+        else {
+
+            String res = db.ValidarLogin(username,password);
+            if(res.equals("OK")){
+                startActivity(new Intent(MainActivity.this, Menu.class));
+
+            }
+            else{
+                Toast.makeText(MainActivity.this, "Login errado, tente novamente", Toast.LENGTH_SHORT).show();
+
+            }
+
+        }
+
     }
 }

@@ -60,7 +60,7 @@
         android:layout_marginBottom="120dp"
         android:background="@android:color/darker_gray"
         android:backgroundTint="@android:color/darker_gray"
-        android:onClick="login"
+        android:onClick="entrarOnClick"
         android:text="Entrar"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
